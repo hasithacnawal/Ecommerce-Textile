@@ -7,7 +7,7 @@ const reducer = (state, acton) => {
   return { products: data.products };
 };
 
-const composeEnhancer = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
   reducer,
