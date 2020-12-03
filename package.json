@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "server": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "start ": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "chana96",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
