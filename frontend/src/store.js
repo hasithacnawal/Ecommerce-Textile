@@ -21,7 +21,9 @@ const intialState = {
     shippingDetails: localStorage.getItem("shippingDetails")
       ? JSON.parse(localStorage.getItem("shippingDetails"))
       : {},
-    paymentMethod: "paypal",
+    paymentMethod: localStorage.getItem("paymentMethod")
+      ? JSON.parse(localStorage.getItem("paymentMethod"))
+      : "paypal",
   },
 };
 

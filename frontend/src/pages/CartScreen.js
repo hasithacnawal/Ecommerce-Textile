@@ -64,12 +64,14 @@ function CartScreen(props) {
                     </select>
                   </div>
                   <div>${item.price}</div>
-                  <button
-                    className="button"
-                    onClick={() => removeFromCartHandler(item.product)}
-                  >
-                    Delete
-                  </button>
+                  <div>
+                    <button
+                      className="button"
+                      onClick={() => removeFromCartHandler(item.product)}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
               </li>
             ))}
