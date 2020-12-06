@@ -49,54 +49,47 @@ export default function ShippingDetailsScreen(props) {
             onChange={(e) => setFullName(e.target.value)}
             required
           ></input>
-          <div>
-            <label htmlFor="address"> Adderess</label>
-            <input
-              type="text"
-              id="adress"
-              placeholder="Enter adress"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-              required
-            ></input>
-          </div>
 
-          <div>
-            <label htmlFor="city"> City </label>
-            <input
-              type="text"
-              id="city"
-              placeholder="Enter city"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
-              required
-            ></input>
-          </div>
+          <label htmlFor="address"> Adderess</label>
+          <input
+            type="text"
+            id="adress"
+            placeholder="Enter adress"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            required
+          ></input>
 
-          <div>
-            <label htmlFor="postalCode"> Postal Code</label>
+          <label htmlFor="city"> City </label>
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter city"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            required
+          ></input>
 
-            <input
-              type="text"
-              id="postalCode"
-              placeholder="Enter postal Code"
-              value={postalCode}
-              onChange={(e) => setPostalCode(e.target.value)}
-              required
-            ></input>
-          </div>
+          <label htmlFor="postalCode"> Postal Code</label>
 
-          <div>
-            <label htmlFor="country"> Country </label>
-            <input
-              type="text"
-              id="country"
-              placeholder="Enter country"
-              value={country}
-              onChange={(e) => setCountry(e.target.value)}
-              required
-            ></input>
-          </div>
+          <input
+            type="text"
+            id="postalCode"
+            placeholder="Enter postal Code"
+            value={postalCode}
+            onChange={(e) => setPostalCode(e.target.value)}
+            required
+          ></input>
+
+          <label htmlFor="country"> Country </label>
+          <input
+            type="text"
+            id="country"
+            placeholder="Enter country"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
+            required
+          ></input>
         </div>
         <div>
           <lable />

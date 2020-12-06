@@ -245,6 +245,7 @@ img.medium {
   color: #c0c0c0;
   flex: 1;
   padding: 1rem;
+  margin-left: 0.1rem;
   font-weight: bold;
 }
 
