@@ -239,3 +239,16 @@ img.medium {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.checkout-steps > div {
+  border-top: 0.5rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout-steps > div.active {
+  border-top-color: #b47732;
+  color: #b47732;
+}
