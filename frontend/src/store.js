@@ -6,7 +6,7 @@ import {
   productDetailsReducer,
   productListReducer,
 } from "./reducers/productReducer";
-import { userSigninReducer } from "./reducers/userReducer";
+import { userRegisterReducer, userSigninReducer } from "./reducers/userReducer";
 
 const intialState = {
   userSignin: {
@@ -27,6 +27,7 @@ const reducer = combineReducers({
   productDetails: productDetailsReducer,
   cart: cartReducer,
   userSignin: userSigninReducer,
+  userRegister: userRegisterReducer,
 });
 
 //static product request

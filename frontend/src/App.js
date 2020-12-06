@@ -6,6 +6,7 @@ import { signout } from "./actions/userActions";
 import CartScreen from "./pages/CartScreen";
 import HomeScreen from "./pages/HomeScreen";
 import ProductScreen from "./pages/ProductScreen";
+import RegisterScreen from "./pages/RegisterScreen";
 import SigninScreen from "./pages/SigninScreen";
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           <Route exact path="/" component={HomeScreen}></Route>
           <Route exact path="/signin" component={SigninScreen}></Route>
           <Route exact path="/product/:id" component={ProductScreen}></Route>
+          <Route exact path="/register" component={RegisterScreen}></Route>
         </main>
         <footer className="row center">All right reserved</footer>
       </div>
