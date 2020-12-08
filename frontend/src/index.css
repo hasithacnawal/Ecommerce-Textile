@@ -202,6 +202,10 @@ img.medium {
   color: #a02020;
   background-color: #ffe0e0e0;
 }
+.alert-success {
+  color: #48a855;
+  background-color: #ffe0e0e0;
+}
 
 /* form */
 
