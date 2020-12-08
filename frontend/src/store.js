@@ -12,7 +12,12 @@ import {
   productDetailsReducer,
   productListReducer,
 } from "./reducers/productReducer";
-import { userRegisterReducer, userSigninReducer } from "./reducers/userReducer";
+import {
+  userDetailsReducer,
+  userRegisterReducer,
+  userSigninReducer,
+  userUpdateProfileReducer,
+} from "./reducers/userReducer";
 
 const intialState = {
   userSignin: {
@@ -39,6 +44,8 @@ const reducer = combineReducers({
   cart: cartReducer,
   userSignin: userSigninReducer,
   userRegister: userRegisterReducer,
+  userDetails: userDetailsReducer,
+  userUpdateProfile: userUpdateProfileReducer,
   orderCreate: orderCreateReducer,
   orderDetails: orderDetailsReducer,
   orderPay: orderPayReducer,

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import { signout } from "./actions/userActions";
+import PrivateRoute from "./components/PrivateRoute";
 import CartScreen from "./pages/CartScreen";
 import HomeScreen from "./pages/HomeScreen";
 import OrderHistory from "./pages/OrderHistory";
@@ -10,6 +11,7 @@ import OrderScreen from "./pages/OrderScreen";
 import PaymentMethodScreen from "./pages/PaymentMethodScreen";
 import PlaceOrderScreen from "./pages/PlaceOrderScreen";
 import ProductScreen from "./pages/ProductScreen";
+import ProfileScreen from "./pages/ProfileScreen";
 import RegisterScreen from "./pages/RegisterScreen";
 import ShippingDetailsScreen from "./pages/ShippingDetailsScreen";
 import SigninScreen from "./pages/SigninScreen";
@@ -50,7 +52,10 @@ function App() {
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="/user/:id/orderhistory">Order History</Link>
+                    <Link to="/profile">My Profile</Link>
+                  </li>
+                  <li>
+                    <Link to="/user/orderhistory">Order History</Link>
                   </li>
                   <li>
                     <Link to="#signout" onClick={signoutHandler}>
@@ -68,6 +73,11 @@ function App() {
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route exact path="/" component={HomeScreen}></Route>
           <Route exact path="/signin" component={SigninScreen}></Route>
+          <PrivateRoute
+            exact
+            path="/profile"
+            component={ProfileScreen}
+          ></PrivateRoute>
           <Route exact path="/product/:id" component={ProductScreen}></Route>
           <Route exact path="/register" component={RegisterScreen}></Route>
           <Route
@@ -79,7 +89,7 @@ function App() {
           <Route path="/placeorder" component={PlaceOrderScreen} exact></Route>
           <Route path="/order/:id" component={OrderScreen} exact></Route>
           <Route
-            path="/user/:id/orderhistory"
+            path="/user/orderhistory"
             component={OrderHistory}
             exact
           ></Route>

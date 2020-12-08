@@ -5,6 +5,11 @@ import LoadingBox from "../components/LoadingBox";
 import MessageBox from "../components/MessageBox";
 
 function OrderHistory(props) {
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  if (!userInfo) {
+    props.history.push("/signin");
+  }
   const orderMineList = useSelector((state) => state.orderMineList);
   const { loading, error, orders } = orderMineList;
   const dispatch = useDispatch();
