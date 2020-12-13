@@ -24,19 +24,19 @@ const productShema = new mongoose.Schema(
       required: true,
     },
     price: {
-      type: String,
+      type: Number,
       required: true,
     },
     countInStock: {
-      type: String,
+      type: Number,
       required: true,
     },
     rating: {
-      type: String,
+      type: Number,
       required: true,
     },
     numReviews: {
-      type: String,
+      type: Number,
       required: true,
     },
   },

@@ -278,3 +278,67 @@ img.medium {
 .table button {
   margin: 0 0.2rem;
 }
+
+/* Navbar */
+.navbar {
+  background-color: #203040;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.menu-bars {
+  font-size: 2rem;
+  background: none;
+}
+.nav-menu {
+  background-color: #203040;
+  grid-area: main;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: 850ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+}
+.nav-text a {
+  text-decoration: none;
+  color: rgb(187, 181, 181);
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+.nav-text a:hover {
+  color: #203040;
+  background-color: #d1a93c !important;
+}
+.nav-menu-items {
+  width: 100%;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.navbar-toggle {
+  background-color: #203040;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: auto;
+}
+span {
+  margin-left: 16px;
+}
