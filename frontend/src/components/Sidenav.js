@@ -19,9 +19,9 @@ function Sidenav() {
       {sidebar ? (
         <nav className="nav-menu">
           <ul className="nav-menu-items">
-            <li className="navbar-toggle">
-              <Link to="#" className="menu-bars" onClick={toggleSide}>
-                <AiOutlineClose />
+            <li className="navbar-brand">
+              <Link className="brand" to="/">
+                amazona
               </Link>
             </li>
             {SidenavData.map((item, index) => {

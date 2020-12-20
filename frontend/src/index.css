@@ -280,27 +280,16 @@ img.medium {
 }
 
 /* Navbar */
-.navbar {
-  background-color: #203040;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.menu-bars {
-  font-size: 2rem;
-  background: none;
-}
+
 .nav-menu {
   background-color: #203040;
-  grid-area: main;
+
   width: 250px;
   height: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 0;
-  transition: 850ms;
+  top: 5rem;
 }
 
 .nav-text {
@@ -309,6 +298,7 @@ img.medium {
   align-items: center;
   list-style: none;
   height: 60px;
+  transition: 850ms;
 }
 .nav-text a {
   text-decoration: none;
@@ -330,14 +320,12 @@ img.medium {
   margin-left: 4px;
   margin-right: 4px;
 }
+.navbar-brand {
+  padding: 0 3px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 .navbar-toggle {
-  background-color: #203040;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: auto;
 }
 span {
   margin-left: 16px;
